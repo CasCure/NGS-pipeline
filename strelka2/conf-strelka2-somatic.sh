@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Make a symbolic link to reference genome
-REF="REF.fa"
+REF="$HOME/REF.fa"
 
 # Make fai if not available.
 # samtools faidx REF.fa
 
 # Setup the Strelka2
 # https://github.com/Illumina/strelka/blob/v2.9.x/docs/userGuide/quickStart.md
-DIR_STRELKA="$HOME/src/strelka2/"
+DIR_STRELKA="$HOME/git/NGS-pipeline/strelka2/2.9.10/"
 
 BAM_TUMOR="name of tumor BAM file"
 BAM_NORMAL="name of normal BAM file"
