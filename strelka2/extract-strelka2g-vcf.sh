@@ -8,5 +8,5 @@ do
   NEW=$DIR_NAME".variants.vcf.gz"
   echo "$VCF -> $NEW"
   cp $VCF $NEW
-  zip -r $DIR_NAME".zip" $DIR_NAME
+  tar cvzpf $DIR_NAME".tgz" $DIR_NAME
 done
