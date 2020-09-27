@@ -15,5 +15,5 @@ do
   echo "$INDELS -> $NEW_INDELS"
   cp $INDELS $NEW_INDELS
 
-  tar cvzpf $DIR_NAME".tgz" $DIR_NAME
+  tar cvzpf $DIR_NAME".strelka2s.tgz" $DIR_NAME
 done
