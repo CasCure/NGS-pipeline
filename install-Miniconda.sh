@@ -10,7 +10,12 @@ else
   wget https://repo.continuum.io/miniconda/$MINICONDA_INSTALLER
   
   echo "Install Miniconda3"
-  chmod 755 $MINICONDA_INSTALLER
-  ./$MINICONDA_INSTALLER
+  #chmod 755 $MINICONDA_INSTALLER
+  #./$MINICONDA_INSTALLER
+  bash ./$MINICONDA_INSTALLER -b -p $HOME/miniconda3
   rm $MINICONDA_INSTALLER
+  $HOME/miniconda3/bin/conda config --set auto_activate_base false
+  $HOME/miniconda3/bin/conda init
 fi
+
+conda create -n py2 python=2.7
