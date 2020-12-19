@@ -8,5 +8,6 @@ if [ ! -e $DB_DIR ]; then
 fi
 
 aws s3 cp s3://cascure-active/db/$HASH_TGZ $DB_DIR
+
 cd $DB_DIR
 tar xvzpf $HASH_TGZ

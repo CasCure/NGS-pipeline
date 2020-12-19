@@ -7,5 +7,5 @@ export LANG="C"
 export LC_ALL="C"
 
 dragen --build-hash-table true \
-  --ht-reference /home/centos/hg38_ref.fa 
-  --output-directory /home/centos/hg38_ref.k_21.f_16.m_149
+  --ht-reference $HOME/hg38_ref.fa 
+  --output-directory $HOME/hg38_ref.k_21.f_16.m_149
