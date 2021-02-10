@@ -2,16 +2,17 @@
 export LANG="C"
 export LC_ALL="C"
 
+WITH_GERMLINE=1
+
 # change the following info for your data
-URL_S3="s3://cascure-active/UNIST/fastq.2020_03/"
+URL_S3="s3://cascure-active/UNIST/fastq/"
 
 # for hg38_ref
 HASH_NAME="hg38_ref.k_21.f_16.m_149"
 
 REF="/ephemeral/db/"$HASH_NAME
 
-CENTER_ID="UNIST"
-DATA_DIR="/ephemeral/"$CENTER_ID
+DATA_DIR="/ephemeral/"
 
 for FQ_N1 in $(cat normal_R1.list)
 do
