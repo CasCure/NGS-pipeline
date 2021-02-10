@@ -14,8 +14,10 @@ else
   #./$MINICONDA_INSTALLER
   bash ./$MINICONDA_INSTALLER -b -p $HOME/miniconda3
   rm $MINICONDA_INSTALLER
-  $HOME/miniconda3/bin/conda config --set auto_activate_base false
+  $HOME/miniconda3/bin/conda config --set auto_activate_base true
   $HOME/miniconda3/bin/conda init
 fi
+
+. ~/.bashrc
 
 conda create -n py2 python=2.7
