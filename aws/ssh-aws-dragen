@@ -1,0 +1,10 @@
+#!/bin/bash
+REGION="us-west-2"
+HOST_NAME=""
+SSH_PEM=""
+
+ssh -i $SSH_PEM centos@$HOST_NAME.$REGION.compute.amazonaws.com
+
+
+
+
